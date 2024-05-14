@@ -95,7 +95,7 @@ To follow along with this tutorial, you should have the following prerequisites:
 
    - An Amazon Aurora database cluster with a writer node in `us-east-2`.
    - An Amazon Aurora global database with the secondary Region in `us-west-2`.
-   - VPC peering between `us-east-2` and `us-west-2` to help our applications securely connect to the Amazon Aurora PostgreSQL-Compatible Edition database across Regions. You can also connect applications over private network using AWS Transit Gateway for intra-Region VPC peering. Please review Building a global network using AWS Transit Gateway Inter-Region peering for additional details. We use VPC peering for keeping this solution simple.Run the following from AWS CloudShell in `us-east-2` Region to set AWS access credentials, clone the [git repository](https://github.com/aws-samples/eks-aurora-global-database) and launch AWS CloudFormation stacks. This step may take approximately 30 minutes.
+   - VPC peering between `us-east-2` and `us-west-2` to help our applications securely connect to the Amazon Aurora PostgreSQL-Compatible Edition database across Regions. You can also connect applications over private network using AWS Transit Gateway for intra-Region VPC peering. Please review Building a global network using AWS Transit Gateway Inter-Region peering for additional details. We use VPC peering for keeping this solution simple.Run the following from AWS CloudShell in `us-east-2` Region to set AWS access credentials, clone the [git repository](https://github.com/aws-solutions-library-samples/guidance-for-multi-region-application-data-using-amazon-aurora) and launch AWS CloudFormation stacks. This step may take approximately 30 minutes.
 
    ```shell
    # Replace AWS Access Key ID and Access Key
