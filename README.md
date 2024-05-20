@@ -1,4 +1,4 @@
-# Guidance for Multi-Region Application Data using Amazon Aurora on AWS
+# Guidance for Multi-Region Application Scaling Using Amazon Aurora on AWS
 
 ## Table of Content
 
