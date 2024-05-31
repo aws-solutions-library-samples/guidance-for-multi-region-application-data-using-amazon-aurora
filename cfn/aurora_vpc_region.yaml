@@ -136,11 +136,12 @@ Parameters:
     Type: String
     Default: 13.9
     AllowedValues:
+      - 15.2
       - 13.9
       - 14.6
 
   DBInstanceClass:
-    Default: db.t3.medium
+    Default: db.r5.large
     Description: Database Instance Class. db.r5 instance classes are supported for Aurora PostgreSQL 10.6 or later. db.t3.medium instance class is supported for Aurora PostgreSQL 10.7 or later.
     Type: String
     AllowedValues:

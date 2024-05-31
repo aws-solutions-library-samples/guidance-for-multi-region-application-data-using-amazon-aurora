@@ -24,14 +24,11 @@ metadata:
   namespace: retailapp
 type: Opaque
 data:
-  database_password: ZWtzZ2RiZGVtbw==
   database_user: ZGJ1c2VyMQ==
   database_host: cmV0YWlsYXBwLXBnYi5yZXRhaWxhcHAuc3ZjLmNsdXN0ZXIubG9jYWw=
   database_port: NjQzMg==
   database_db_name: Z2RiZGVtbw==
   database_rodb_name: Z2RiZGVtby1ybw==
-  secret_key: ZWtzZ2RiZGVtb3NlY3JldA==
-  authtoken: ZWtzZ2RiZGVtb3Rva2Vu
   kart_service: aHR0cDovL2thcnQucmV0YWlsYXBwLnN2Yy5jbHVzdGVyLmxvY2FsOjg0NDU=
   product_service: aHR0cDovL3Byb2R1Y3QucmV0YWlsYXBwLnN2Yy5jbHVzdGVyLmxvY2FsOjg0NDQ=
   user_service: aHR0cDovL3VzZXIucmV0YWlsYXBwLnN2Yy5jbHVzdGVyLmxvY2FsOjg0NDY=
@@ -99,11 +96,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_user
-          - name: DATABASE_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: database_password
           - name: DATABASE_DB_NAME
             valueFrom:
               secretKeyRef:
@@ -114,16 +106,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_rodb_name
-          - name: SECRET_KEY
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: secret_key
-          - name: AUTHTOKEN
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: authtoken
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -187,11 +169,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_user
-          - name: DATABASE_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: database_password
           - name: DATABASE_DB_NAME
             valueFrom:
               secretKeyRef:
@@ -202,16 +179,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_rodb_name
-          - name: SECRET_KEY
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: secret_key
-          - name: AUTHTOKEN
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: authtoken
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -275,11 +242,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_user
-          - name: DATABASE_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: database_password
           - name: DATABASE_DB_NAME
             valueFrom:
               secretKeyRef:
@@ -290,16 +252,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_rodb_name
-          - name: SECRET_KEY
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: secret_key
-          - name: AUTHTOKEN
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: authtoken
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -363,11 +315,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_user
-          - name: DATABASE_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: database_password
           - name: DATABASE_DB_NAME
             valueFrom:
               secretKeyRef:
@@ -378,16 +325,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_rodb_name
-          - name: SECRET_KEY
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: secret_key
-          - name: AUTHTOKEN
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: authtoken
           - name: PRODUCTS_SERVICE
             valueFrom:
               secretKeyRef:
@@ -472,11 +409,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_user
-          - name: DATABASE_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: database_password
           - name: DATABASE_DB_NAME
             valueFrom:
               secretKeyRef:
@@ -487,16 +419,6 @@ spec:
               secretKeyRef:
                  name: retailapp-secret
                  key: database_rodb_name
-          - name: SECRET_KEY
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: secret_key
-          - name: AUTHTOKEN
-            valueFrom:
-              secretKeyRef:
-                 name: retailapp-secret
-                 key: authtoken
 ---
 apiVersion: v1
 kind: Service

@@ -1,4 +1,4 @@
-# Guidance for Multi-Region Application Scaling Using Amazon Aurora on AWS
+# Guidance for Multi-Region Application Data using Amazon Aurora on AWS
 
 ## Table of Content
 
@@ -98,11 +98,8 @@ To follow along with this tutorial, you should have the following prerequisites:
    - VPC peering between `us-east-2` and `us-west-2` to help our applications securely connect to the Amazon Aurora PostgreSQL-Compatible Edition database across Regions. You can also connect applications over private network using AWS Transit Gateway for intra-Region VPC peering. Please review Building a global network using AWS Transit Gateway Inter-Region peering for additional details. We use VPC peering for keeping this solution simple.Run the following from AWS CloudShell in `us-east-2` Region to set AWS access credentials, clone the [git repository](https://github.com/aws-solutions-library-samples/guidance-for-multi-region-application-data-using-amazon-aurora) and launch AWS CloudFormation stacks. This step may take approximately 30 minutes.
 
    ```shell
-   # Replace AWS Access Key ID and Access Key
    # Set REGION1 to source Region
    # Set REGION2 to target Region
-   export AWS_ACCESS_KEY_ID=<key id> 
-   export AWS_SECRET_ACCESS_KEY=<access key> 
    export AWS_DEFAULT_REGION=us-east-2
    export AWS_REGION=us-east-2
    export REGION1=us-east-2
@@ -454,8 +451,6 @@ For more information, refer to the following:
 2. Run the following from AWS CloudShell in `us-west-2` Region:
 
    ```
-   export AWS_ACCESS_KEY_ID=<key id> 
-   export AWS_SECRET_ACCESS_KEY=<access key> 
    export AWS_DEFAULT_REGION=us-west-2 
    # Set REGION1 to source Region
    # Set REGION2 to target Region
