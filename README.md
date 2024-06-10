@@ -77,7 +77,7 @@ The following table provides a sample cost breakdown for deploying this Guidance
 
 Total estimated cost: $ 446.02
 
-Note: This amount is an estimate and does not include the costs such as data transfer costs. The actual cost may vary depending on your usage and provisioned services.
+Note: We recommend creating a Budget through AWS Cost Explorer to help manage costs. Prices are subject to change. For full details, refer to the pricing webpage for each AWS service used in this Guidance
 
 
 ## Prerequisites
