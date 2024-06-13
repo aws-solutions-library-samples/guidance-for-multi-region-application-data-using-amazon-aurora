@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Guidance for Multi-Region Application Data using Amazon Aurora on AWS (SO9450)
 # Please set env variables REGION1, REGION2 and run the script
 # REGION1 = Source Region
 # REGION2 = Target Region
