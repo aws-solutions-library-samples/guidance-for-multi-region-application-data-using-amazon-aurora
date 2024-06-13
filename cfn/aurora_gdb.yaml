@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: 'CloudFormation Template to create Aurora Postgresql Cluster DB Instance'
+Description: 'Cloudformation Template for Guidance for multi-Region applications using Amazon EKS and Amazon Aurora (SO9450)'
 
 ###############################################################################
 # Parameters
