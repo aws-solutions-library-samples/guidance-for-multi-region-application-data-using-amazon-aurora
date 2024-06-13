@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 
-Description: 'Cloudformation Template to create a VPC with public and private subnets in 3 AZs for Demo utilizing Aurora Global Database and EKS on Multi Regions'
+Description: 'Cloudformation Template for Guidance for multi-Region applications using Amazon EKS and Amazon Aurora (SO9450)'
 
 Metadata:
   'AWS::CloudFormation::Interface':
