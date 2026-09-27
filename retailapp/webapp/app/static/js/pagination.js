@@ -1,5 +1,5 @@
 
-$(document).on("ready", function(){
+$(function(){
 	const url= window.location.href
 	const params = url.split("?")
 	if (params.length ==1){
